@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, User, Chip, Tooltip } from "@nextui-org/react";
-import { EditIcon } from "../assets/EditIcon";
-import { DeleteIcon } from "../assets/DeleteIcon";
-import { EyeIcon } from "../assets/EyeIcon";
-import { columns, users as initialUsers } from "../Data/data";
+import { EditIcon } from "./assets/EditIcon";
+import { DeleteIcon } from "./assets/DeleteIcon";
+import { EyeIcon } from "./assets/EyeIcon";
+import { columns, users as initialUsers } from "./Data/data";
 
 type UserType = {
   id: string;
@@ -23,7 +23,7 @@ const statusColorMap: Record<StatusType, "success" | "danger" | "warning"> = {
   vacation: "warning",
 };
 
-export default function App() {
+export default function TheTable() {
   const [users, setUsers] = useState<UserType[]>(initialUsers);
 
   // Function to delete a user
