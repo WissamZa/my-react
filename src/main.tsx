@@ -1,16 +1,15 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createRoot } from 'react-dom/client';
+
 import { NextUIProvider } from "@nextui-org/react";
+
 import App from './App'
 import TheTable from './theTable'
-import './index.css'
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
-import { createRoot } from 'react-dom/client';
 import NotFoundPage from './components/NotFoundPage';
+import './index.css'
+
+
 
 const router = createBrowserRouter([
   {
