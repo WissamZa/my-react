@@ -4,10 +4,11 @@ import { createRoot } from 'react-dom/client';
 
 import { NextUIProvider } from "@nextui-org/react";
 
-import App from './App'
-import TheTable from './theTable'
-import NotFoundPage from './components/NotFoundPage';
-import './index.css'
+import App from './Pages/App'
+import TheTable from './Pages/theTable'
+import Nave from './Pages/Nave';
+import NotFoundPage from './Pages/NotFoundPage';
+import './Styles/index.css'
 
 
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     element: <TheTable />,
 
   },
+  {
+    path:'/nave',
+    element:<Nave />,
+  }
 ]);
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

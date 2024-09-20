@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, User, Chip, Tooltip } from "@nextui-org/react";
-import { EditIcon } from "./assets/EditIcon";
-import { DeleteIcon } from "./assets/DeleteIcon";
-import { EyeIcon } from "./assets/EyeIcon";
-import { columns, users as initialUsers } from "./Data/data";
+import { EditIcon } from "../assets/EditIcon";
+import { DeleteIcon } from "../assets/DeleteIcon";
+import { EyeIcon } from "../assets/EyeIcon";
+import { columns, users as initialUsers } from "../Data/data";
 
 type UserType = {
   id: string;
@@ -32,6 +32,7 @@ export default function TheTable() {
   };
 
   return (
+    <main>
     <Table className="w-[50svw]" aria-label="Example table with custom cells">
       <TableHeader columns={columns}>
         {(column) => (
@@ -103,5 +104,6 @@ export default function TheTable() {
         )}
       </TableBody>
     </Table>
+    </main>
   );
 }
