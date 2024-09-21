@@ -1,14 +1,16 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 
 export default function Nave() {
   return (
-   <Navbar>
+    <Navbar className="absolute">
       <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
+        <a href="/">
+          <p className="font-bold text-inherit">ACME</p>
+        </a>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/table">
             Features
           </Link>
         </NavbarItem>
