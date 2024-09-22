@@ -9,6 +9,7 @@ import TheTable from './Pages/theTable'
 import Nave from './Pages/Nave';
 import NotFoundPage from './Pages/NotFoundPage';
 import './Styles/index.css'
+import Signup from './Pages/Signin';
 
 
 
@@ -24,8 +25,12 @@ const router = createBrowserRouter([
 
   },
   {
-    path:'/nave',
-    element:<Nave />,
+    path: '/nave',
+    element: <Nave />,
+  },
+  {
+    path: '/signup',
+    element: <Signup />,
   }
 ]);
 createRoot(document.getElementById("root")!).render(

@@ -5,7 +5,7 @@ export default function Nave() {
     <Navbar className="absolute">
       <NavbarBrand>
         <a href="/">
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit">Home</p>
         </a>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -30,7 +30,7 @@ export default function Nave() {
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="/signup" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
