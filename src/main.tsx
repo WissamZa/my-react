@@ -4,19 +4,18 @@ import { createRoot } from 'react-dom/client';
 
 import { NextUIProvider } from "@nextui-org/react";
 
-import App from './Pages/App'
 import TheTable from './Pages/theTable'
-import Nave from './Pages/Nave';
 import NotFoundPage from './Pages/NotFoundPage';
 import './Styles/index.css'
-import Signup from './Pages/Signin';
+import Signin from './Pages/Signin';
+import Card from './Pages/Card';
 
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Card />,
     errorElement: <NotFoundPage />,
   },
   {
@@ -25,12 +24,8 @@ const router = createBrowserRouter([
 
   },
   {
-    path: '/nave',
-    element: <Nave />,
-  },
-  {
-    path: '/signup',
-    element: <Signup />,
+    path: '/signin',
+    element: <Signin />,
   }
 ]);
 createRoot(document.getElementById("root")!).render(

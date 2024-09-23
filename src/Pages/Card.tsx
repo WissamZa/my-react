@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../Styles/App.css'
 import Nave from './Nave'
-function App() {
+function Card() {
   const [title] = useState("card")
 
   return (
@@ -26,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default Card
