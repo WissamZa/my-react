@@ -1,5 +1,5 @@
 import { TERipple } from "tw-elements-react";
-import Nave from "./Nave";
+import Nave from "../components/Nave";
 
 export default function Signin() {
   return (

@@ -4,11 +4,11 @@ import { createRoot } from 'react-dom/client';
 
 import { NextUIProvider } from "@nextui-org/react";
 
-import TheTable from './Pages/theTable'
+import TheTable from './components/theTable'
 import NotFoundPage from './Pages/NotFoundPage';
 import './Styles/index.css'
 import Signin from './Pages/Signin';
-import Card from './Pages/Card';
+import Card from './components/Card';
 
 
 
